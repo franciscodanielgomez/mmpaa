@@ -35,10 +35,10 @@ export default function Footer(props) {
 
         {/* Columna Useful Links (1/4) */}
         <div className="md:col-span-1">
-          <h3 className="font-bold mb-2">Useful links</h3>
+          <h3 className="font-bold mb-2">Links</h3>
           <ul className="space-y-1">
             <li>
-              <a href="/">Home</a>
+              <a href="/faq">FAQ's</a>
             </li>
             <li>
               <a href="/about">About</a>

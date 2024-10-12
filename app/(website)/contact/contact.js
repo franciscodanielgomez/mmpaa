@@ -83,7 +83,7 @@ export default function Contact({ settings }) {
 
   <div className="my-10">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div className="p-4 bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+      <div className="p-4 bg-gray-100 rounded-lg flex flex-col justify-between">
         <div>
           <h3 className="font-bold mb-8">Any question about Medical Physics?<sup>*</sup></h3>
           <p className="text-gray-700 mb-8">
@@ -108,7 +108,7 @@ export default function Contact({ settings }) {
               </button>
             </a>
           </div>
-          <div className="p-4 bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+          <div className="p-4 bg-gray-100 rounded-lg flex flex-col justify-between">
             <div>
               <h3 className="font-bold mb-8">Any question about the Association?<sup>*</sup></h3>
               <p className="text-gray-700 mb-8">

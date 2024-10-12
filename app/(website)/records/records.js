@@ -31,7 +31,7 @@ export default function Records({ authors, settings }) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6"> {/* Cambié a 3 columnas */}
 
           {/* Tarjeta de Newsletter */}
-          <div className="p-4 bg-gray-100 rounded-lg shadow-md  flex flex-col justify-between">
+          <div className="p-4 bg-gray-100 rounded-lg  flex flex-col justify-between">
             <div>
               <h3 className="font-bold mb-8">Newsletter</h3>
               <p className="text-gray-700 mb-8">
@@ -54,7 +54,7 @@ export default function Records({ authors, settings }) {
           </div>
 
           {/* Tarjeta de Documents */}
-          <div className="p-4 bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+          <div className="p-4 bg-gray-100 rounded-lg flex flex-col justify-between">
             <div>
               <h3 className="font-bold mb-8">Documents</h3>
               <p className="text-gray-700 mb-8">
@@ -77,7 +77,7 @@ export default function Records({ authors, settings }) {
           </div>
 
           {/* Tarjeta de Webinar videos */}
-          <div className="p-4 bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+          <div className="p-4 bg-gray-100 rounded-lg flex flex-col justify-between">
             <div>
               <h3 className="font-bold mb-8">Webinar videos</h3>
               <p className="text-gray-700 mb-8">
