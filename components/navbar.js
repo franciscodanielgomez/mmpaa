@@ -21,26 +21,24 @@ export default function Navbar(props) {
       href: "/about"
     },
     {
-      label: "Contact",
-      href: "/contact"
+      label: "Members",
+      href: "/about"
     }
   ];
 
   const rightmenu = [
     {
-      label: "Archive",
-      href: "/archive"
+      label: "Records",
+      href: "/about"
     },
     {
-      label: "Pro Version",
-      href: "https://stablo-pro.web3templates.com/",
-      external: true,
-      badge: "new"
+      label: "Announcements",
+      href: "/archive",
+      badge: "New"
     },
     {
-      label: "Download",
-      href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
-      external: true
+      label: "Contact",
+      href: "/contact"
     }
   ];
 
@@ -86,7 +84,7 @@ export default function Navbar(props) {
                       />
                     ) : (
                       <span className="block text-center">
-                        Stablo
+                        MMPAA
                       </span>
                     )}
                   </Link>
@@ -100,7 +98,7 @@ export default function Navbar(props) {
                       />
                     ) : (
                       <span className="block text-center">
-                        Stablo
+                        MMPAA
                       </span>
                     )}
                   </Link>
