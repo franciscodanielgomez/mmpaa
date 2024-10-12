@@ -3,16 +3,18 @@ import { urlForImage } from "@/lib/sanity/image";
 import Image from "next/image";
 import Link from "next/link";
 
+
 export default function About({ authors, settings }) {
   return (
     <Container>
       <h1
         className="text-brand-primary mb-12 mt-2 text-3xl font-semibold tracking-tight dark:text-white lg:text-4xl lg:leading-snug">
-        About Us
+        About
       </h1>
-      <div className=" mb-8">
-        <p className="text-lg">Master in Medical Physics Alumni Association</p>
-      </div>
+      <h3
+        className="mb-12 mt-2 text-2xl font-semibold tracking-tight dark:text-white lg:leading-snug">
+        Master in Medical Physics Alumni Association
+      </h3>
 
       <div className="mx-auto mt-14 mb-14 dark:prose-invert">
         <p className="my-4">
@@ -52,9 +54,10 @@ export default function About({ authors, settings }) {
 
       <hr className="my-8" />
 
-      <div className=" mb-8">
-        <p className="text-lg">Mission Statement</p>
-      </div>
+      <h3
+        className="mb-12 mt-2 text-2xl font-semibold tracking-tight dark:text-white lg:leading-snug">
+        Mission Statement
+      </h3>
 
       <div className="mx-auto mt-14 mb-14 dark:prose-invert">
         <p>
@@ -87,9 +90,11 @@ export default function About({ authors, settings }) {
 
       <hr className="my-8" />
 
-      <div className=" mb-14">
-        <p className="text-lg">Our Core Values</p>
-      </div>
+      <h3
+        className="mb-12 mt-2 text-2xl font-semibold tracking-tight dark:text-white lg:leading-snug">
+        Our Core Values
+      </h3>
+
 
       <p className="my-4"><strong>Ethics and Professionalism:</strong> Ethical conduct and professionalism are
         fundamental values for
@@ -137,8 +142,6 @@ export default function About({ authors, settings }) {
         of medical physics in healthcare. It may work towards promoting public awareness of the role and impact of
         medical physicists in patient care, radiation safety, and radiation therapy.</p>
 
-
-      <hr className="my-8" />
 
     </Container>
   );

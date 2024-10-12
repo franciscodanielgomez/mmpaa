@@ -22,14 +22,14 @@ export default function Navbar(props) {
     },
     {
       label: "Members",
-      href: "/about"
+      href: "/members"
     }
   ];
 
   const rightmenu = [
     {
       label: "Records",
-      href: "/about"
+      href: "/records"
     },
     {
       label: "Announcements",

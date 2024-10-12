@@ -4,11 +4,14 @@ import Container from "@/components/container";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
+import Link from "next/link";
 import {
   MapPinIcon,
   EnvelopeIcon,
-  PhoneIcon
+  PhoneIcon,
+  InstagramIcon
 } from "@heroicons/react/24/outline";
+
 export default function Contact({ settings }) {
   const {
     register,
@@ -29,8 +32,8 @@ export default function Contact({ settings }) {
   const { submit: onSubmit } = useWeb3Forms({
     access_key: apiKey,
     settings: {
-      from_name: "Stablo Template",
-      subject: "New Contact Message from Stablo Website"
+      from_name: "MMPAA",
+      subject: "Master in Medical Physics Alumni Association"
     },
     onSuccess: (msg, data) => {
       setIsSuccess(true);
@@ -45,165 +48,104 @@ export default function Contact({ settings }) {
 
   return (
     <Container>
-      <h1 className="mt-2 mb-3 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4xl dark:text-white">
+      <h1
+        className="text-brand-primary mb-12 mt-2 text-3xl font-semibold tracking-tight dark:text-white lg:text-4xl lg:leading-snug">
         Contact
       </h1>
-      <div className="text-center">
-        <p className="text-lg">We are a here to help.</p>
+      <h3
+        className="mb-12 mt-2 text-2xl font-semibold tracking-tight dark:text-white lg:leading-snug">
+        Anything we can do for you?
+      </h3>
+
+      <div className="mx-auto mt-14 mb-4  dark:prose-invert">
+        <p>
+          We are here to assist you with any inquiries or concerns you may have related to medical physics, the MMPAA,
+          or our activities. Whether you are a student, professional, or someone interested in learning more about the
+          field, we are committed to providing the support and information you need.
+        </p>
       </div>
 
-      <div className="grid my-10 md:grid-cols-2">
-        <div className="my-10">
-          <h2 className="text-2xl font-semibold dark:text-white">
-            Contact Stablo
-          </h2>
-          <p className="max-w-sm mt-5">
-            Have something to say? We are here to help. Fill up the
-            form or send email or call phone.
+      <div className="prose dark:prose-invert">
+        <div className="flex space-x-4">
+          <p className="mb-0">
+            <Link href=" ">Instagram</Link>
           </p>
+          <p className="mb-0">
+            <Link href=" ">Linkedin</Link>
+          </p>
+          <p className="mb-0">
+            <Link href="mailto:contact@mmpaa.org">Email</Link>
+          </p>
+        </div>
+      </div>
 
-          <div className="mt-5">
-            <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-gray-400">
-              <MapPinIcon className="w-4 h-4" />
-              <span>1734 Sanfransico, CA 93063</span>
+  <hr className="my-8" />
+
+  <div className="my-10">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="p-4 bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+        <div>
+          <h3 className="font-bold mb-8">Any question about Medical Physics?<sup>*</sup></h3>
+          <p className="text-gray-700 mb-8">
+            MMPAA works closely with medical physics professionals to ensure the safe and effective use of various
+            medical technologies, including diagnostic imaging equipment, radiation therapy machines, and nuclear
+            medicine instruments. In order to contribute to the development, calibration, and quality assurance of
+            medical physics to ensure accurate and reliable results in any part of the world, you could do any
+                question-related and we will treat to answer.
+              </p>
             </div>
-            {settings?.email && (
-              <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-gray-400">
-                <EnvelopeIcon className="w-4 h-4" />
-                <a href={`mailto:${settings.email}`}>
-                  {settings.email}
-                </a>
-              </div>
-            )}
-            {settings?.phone && (
-              <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-gray-400">
-                <PhoneIcon className="w-4 h-4" />
-                <a href={`tel:${settings.phone}`}>{settings.phone}</a>
-              </div>
-            )}
+            <a
+              href="https://forms.gle/2R7EdzB6ieFBFjkT8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-auto"
+            >
+              <button
+                type="button"
+                className="py-2 px-4 font-semibold text-white transition-colors bg-gray-900 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 dark:bg-white dark:text-black"
+              >
+                Ask a Question
+              </button>
+            </a>
+          </div>
+          <div className="p-4 bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+            <div>
+              <h3 className="font-bold mb-8">Any question about the Association?<sup>*</sup></h3>
+              <p className="text-gray-700 mb-8">
+                If you have any specific questions about membership or related topics, such as the benefits of joining,
+                eligibility requirements, or how to get involved, feel free to contact us. We’re here to guide you
+                through
+                the process and provide the support you need. Whether you’re interested in becoming a volunteer,
+                presenting at an upcoming event, or simply sharing your thoughts and ideas, this is your chance to
+                engage
+                with the community. We value your participation and look forward to hearing from you through this
+                platform.
+              </p>
+
+            </div>
+            <a
+              href="https://forms.gle/L3FHaGhjLHfHNX7R6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-auto"
+            >
+              <button
+                type="button"
+                className="py-2 px-4 font-semibold text-white transition-colors bg-gray-900 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 dark:bg-white dark:text-black"
+              >
+                Ask a Question
+              </button>
+            </a>
           </div>
         </div>
-        <div>
-          <form onSubmit={handleSubmit(onSubmit)} className="my-10">
-            <input
-              type="checkbox"
-              id=""
-              className="hidden"
-              style={{ display: "none" }}
-              {...register("botcheck")}></input>
-
-            <div className="mb-5">
-              <input
-                type="text"
-                placeholder="Full Name"
-                autoComplete="false"
-                className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${
-                  errors.name
-                    ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
-                    : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
-                }`}
-                {...register("name", {
-                  required: "Full name is required",
-                  maxLength: 80
-                })}
-              />
-              {errors.name && (
-                <div className="mt-1 text-red-600">
-                  <small>{errors.name.message}</small>
-                </div>
-              )}
-            </div>
-
-            <div className="mb-5">
-              <label htmlFor="email_address" className="sr-only">
-                Email Address
-              </label>
-              <input
-                id="email_address"
-                type="email"
-                placeholder="Email Address"
-                name="email"
-                autoComplete="false"
-                className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${
-                  errors.email
-                    ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
-                    : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
-                }`}
-                {...register("email", {
-                  required: "Enter your email",
-                  pattern: {
-                    value: /^\S+@\S+$/i,
-                    message: "Please enter a valid email"
-                  }
-                })}
-              />
-              {errors.email && (
-                <div className="mt-1 text-red-600">
-                  <small>{errors.email.message}</small>
-                </div>
-              )}
-            </div>
-
-            <div className="mb-3">
-              <textarea
-                name="message"
-                placeholder="Your Message"
-                className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white dark:placeholder:text-gray-200 dark:bg-gray-900   rounded-md outline-none  h-36 focus:ring-4  ${
-                  errors.message
-                    ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
-                    : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
-                }`}
-                {...register("message", {
-                  required: "Enter your Message"
-                })}
-              />
-              {errors.message && (
-                <div className="mt-1 text-red-600">
-                  {" "}
-                  <small>{errors.message.message}</small>
-                </div>
-              )}
-            </div>
-
-            <button
-              type="submit"
-              className="w-full py-4 font-semibold text-white transition-colors bg-gray-900 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7 dark:bg-white dark:text-black ">
-              {isSubmitting ? (
-                <svg
-                  className="w-5 h-5 mx-auto text-white dark:text-black animate-spin"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24">
-                  <circle
-                    className="opacity-25"
-                    cx="12"
-                    cy="12"
-                    r="10"
-                    stroke="currentColor"
-                    strokeWidth="4"></circle>
-                  <path
-                    className="opacity-75"
-                    fill="currentColor"
-                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                </svg>
-              ) : (
-                "Send Message"
-              )}
-            </button>
-          </form>
-
-          {isSubmitSuccessful && isSuccess && (
-            <div className="mt-3 text-sm text-center text-green-500">
-              {message || "Success. Message sent successfully"}
-            </div>
-          )}
-          {isSubmitSuccessful && !isSuccess && (
-            <div className="mt-3 text-sm text-center text-red-500">
-              {message || "Something went wrong. Please try later."}
-            </div>
-          )}
-        </div>
       </div>
+
+      <div className="mx-auto mt-14 mb-14 dark:prose-invert">
+  <span className="text-xs text-gray-500">
+    *Disclaimer: This form is available for private, non-commercial use only. Advertising which is incorporated into, placed in association with, or targeted toward the content of this form, without the express approval and knowledge of MMPAA board site developers, is forbidden. You may not edit, modify, or redistribute this form. The developers of MMPAA board site assume no liability for any activities in connection with this form or for use of this form in connection with any other Web site, computer, or playing device.
+  </span>
+      </div>
+
     </Container>
   );
 }
