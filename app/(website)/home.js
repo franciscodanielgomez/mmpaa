@@ -87,15 +87,14 @@ export default function Post({ posts }) {
                   oportunidades y hacer crecer tu carrera.
                 </p>
                 <a
-                  href="https://forms.gle/2R7EdzB6ieFBFjkT8"
-                  target="_blank"
+                  href="/about"
                   rel="noopener noreferrer"
                 >
                   <button
                     type="button"
                     className="py-2 px-4 font-semibold text-white transition-colors bg-gray-900 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 dark:bg-white dark:text-black"
                   >
-                    Ask a Question
+                    View More
                   </button>
                 </a>
               </div>
@@ -124,15 +123,14 @@ export default function Post({ posts }) {
                   the association and medical physics. For inquiries, please contact us.
                 </p>
                 <a
-                  href="https://forms.gle/2R7EdzB6ieFBFjkT8"
-                  target="_blank"
+                  href="/records"
                   rel="noopener noreferrer"
                 >
                   <button
                     type="button"
                     className="py-2 px-4 font-semibold text-white transition-colors bg-gray-900 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 dark:bg-white dark:text-black"
                   >
-                    Ask a Question
+                    More Records
                   </button>
                 </a>
               </div>
@@ -214,7 +212,7 @@ export default function Post({ posts }) {
               href="/archive"
               className="relative inline-flex items-center gap-1 rounded-md border border-gray-300 bg-white px-3 py-2 pl-4 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 disabled:pointer-events-none disabled:opacity-40 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300"
             >
-              <span>View all Posts</span>
+              <span>View all Announcements</span>
             </Link>
           </div>
 

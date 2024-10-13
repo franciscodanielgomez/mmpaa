@@ -49,12 +49,13 @@ export default function Members({ authors, settings }) {
 
       <div className="mx-auto mt-14 mb-14 dark:prose-invert">
         <p className="my-4">
-          Being an active member of an MMPAA involves more than mere affiliation; it entails proactive engagement and
-          contribution to the collective pursuit of knowledge. Actively participating in conferences, seminars, and
-          collaborative projects fosters intellectual exchange, broadens perspectives, and enhances one’s expertise.
-          Networking with fellow members, sharing insights, and staying abreast of the latest developments enrich the
-          communal fabric. Ultimately, an active member catalyzes the association’s mission, driving innovation, and
-          propelling scientific inquiry forward through sustained dedication and involvement.
+          Here is the list of our active members. Being an active member of the MMPAA goes beyond mere affiliation; it
+          involves proactive engagement and a commitment to advancing collective knowledge. Participation in
+          conferences, seminars, and collaborative projects fosters intellectual exchange and broadens perspectives
+          while enhancing expertise. Networking with fellow members and sharing insights keep everyone informed of the
+          latest developments, strengthening our community. Ultimately, each active member plays a vital role in driving
+          the association’s mission, fostering innovation, and advancing scientific inquiry through sustained dedication
+          and involvement.
         </p>
       </div>
 
