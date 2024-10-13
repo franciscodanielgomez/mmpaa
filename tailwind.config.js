@@ -14,8 +14,7 @@ module.exports = {
         gray: colors.neutral
       },
       fontFamily: {
-        // to change, update font in _document.js
-        sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
+        sans: ["var(--font-montserrat)", ...defaultTheme.fontFamily.sans], // Cambiado a Montserrat
         serif: ["var(--font-lora)", ...defaultTheme.fontFamily.serif],
         stock: [defaultTheme.fontFamily.sans]
       },

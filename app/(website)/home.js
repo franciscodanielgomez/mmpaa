@@ -5,7 +5,7 @@ import PostList from "@/components/postlist";
 const HeaderBanner = () => {
   return (
     <div
-      className="mb-10 flex flex-col items-start justify-center h-64 text-left p-5 rounded-md overflow-hidden relative"
+      className="mb-10 flex flex-col items-start justify-center h-96 text-left p-5 rounded-md overflow-hidden relative"
       style={{
         backgroundImage: "url('https://www.foronuclear.org/wp-content/uploads/2010/06/atomo-y-electrones-854x465.jpg')",
         backgroundSize: "cover",
