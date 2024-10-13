@@ -1,15 +1,29 @@
 import { cx } from "@/utils/all";
 
-export default function Container(props) {
+export default function Container({ children, className, fullWidth, fullScreen, large, alt }) {
   return (
     <div
       className={cx(
-        "container px-8 mx-auto xl:px-5",
-        props.large ? " max-w-screen-xl" : " max-w-screen-lg",
-        !props.alt && "py-5 lg:py-8",
-        props.className
-      )}>
-      {props.children}
+        // Base styles
+        "w-full mx-auto",
+
+        // FullScreen styles
+        fullScreen && "min-h-screen flex flex-col justify-center items-center",
+
+        // Width control
+        !fullScreen && !fullWidth && "container px-4 md:px-8",
+
+        // Max width control
+        !fullScreen && (large ? "max-w-screen-xl" : "max-w-screen-lg"),
+
+        // Padding for non-fullScreen and non-alt cases
+        !fullScreen && !alt && "py-5 lg:py-8",
+
+        // Custom className
+        className
+      )}
+    >
+      {children}
     </div>
   );
 }

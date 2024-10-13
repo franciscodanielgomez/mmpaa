@@ -79,18 +79,18 @@ export default function Contact({ settings }) {
         </div>
       </div>
 
-  <hr className="my-8" />
+      <hr className="my-8" />
 
-  <div className="my-10">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div className="p-4 bg-gray-100 rounded-lg flex flex-col justify-between">
-        <div>
-          <h3 className="font-bold mb-8">Any question about Medical Physics?<sup>*</sup></h3>
-          <p className="text-gray-700 mb-8">
-            MMPAA works closely with medical physics professionals to ensure the safe and effective use of various
-            medical technologies, including diagnostic imaging equipment, radiation therapy machines, and nuclear
-            medicine instruments. In order to contribute to the development, calibration, and quality assurance of
-            medical physics to ensure accurate and reliable results in any part of the world, you could do any
+      <div className="my-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="p-4 bg-gray-100 rounded-lg flex flex-col justify-between">
+            <div>
+              <h3 className="font-bold mb-8">Any question about Medical Physics?<sup>*</sup></h3>
+              <p className="text-gray-700 mb-8">
+                MMPAA works closely with medical physics professionals to ensure the safe and effective use of various
+                medical technologies, including diagnostic imaging equipment, radiation therapy machines, and nuclear
+                medicine instruments. In order to contribute to the development, calibration, and quality assurance of
+                medical physics to ensure accurate and reliable results in any part of the world, you could do any
                 question-related and we will treat to answer.
               </p>
             </div>
