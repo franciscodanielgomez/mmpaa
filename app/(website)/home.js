@@ -37,21 +37,21 @@ export default function Post({ posts }) {
       alt: "Banner 1",
       title: "Welcome to MMPAA",
       description: "This is where we create a master in medical physics community from all over the globe.",
-      link: "https://example.com/bienvenido"
+      link: "/about"
     },
     {
       src: "/img/hero2.png",
       alt: "Banner 2",
-      title: "Descubre Nuevas Ideas",
-      description: "Inspiración para tu día a día",
-      link: "https://example.com/descubre"
+      title: "Join Our Community",
+      description: "Advancing Medical Physics Through  Collaboration for Former MMP Students of ICTP.",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSeW2cqW3x4qXOpERSUmnOmP8CW6wGkPybBQAlkCr9WGsqcDWw/viewform"
     },
     {
       src: "/img/hero3.png",
       alt: "Banner 3",
-      title: "Únete a Nuestra Comunidad",
-      description: "Comparte y aprende con nosotros",
-      link: "https://example.com/unete"
+      title: "Updates",
+      description: "News and Announcements for ICTP MMP Alumni.",
+      link: "/announcements"
     }
   ];
 
